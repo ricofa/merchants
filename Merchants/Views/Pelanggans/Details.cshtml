@@ -1,0 +1,50 @@
+﻿@model Merchants.Models.Pelanggan
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pelanggan</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Alamat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Alamat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kelamin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kelamin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pekerjaan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pekerjaan)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

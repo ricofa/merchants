@@ -1,0 +1,84 @@
+﻿@model Merchants.Models.Faktur
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Faktur</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Karyawan.Nama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Karyawan.Nama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pelanggan.Nama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pelanggan.Nama)
+        </dd>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.Cloth.Merk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cloth.Merk)
+        </dd>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.Tanggal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tanggal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Jumlah)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Jumlah)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Harga)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Harga)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pajak)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pajak)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Total)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Total)
+        </dd>
+
+        
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
